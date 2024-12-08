@@ -13,9 +13,15 @@ provider:
   runtime: nodejs20.x
 
 functions:
-  api:
-    handler: handler.handler
+  hello:
+    handler: src/functions/hello.handler
     events:
       - httpApi:
           path: /
-          method: get
+          method: GET
+  getUserById:
+    handler: src/functions/getUserById.handler
+    events:
+      - httpApi:
+          path: /users/{userId}
+          method: GET
