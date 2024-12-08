@@ -11,6 +11,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs20.x
+  memorySize: 128
 
 functions:
   hello:
@@ -21,6 +22,7 @@ functions:
           method: GET
   getUserById:
     handler: src/functions/getUserById.handler
+    memorySize: 512
     events:
       - httpApi:
           path: /users/{userId}
