@@ -1,0 +1,7 @@
+node_modules
+.serverless
+yarn-error.log
+
+apisls/node_modules
+apisls/.serverless
+apisls/yarn-error.log

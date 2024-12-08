@@ -1,0 +1,9 @@
+{
+  "name": "apisls",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-offline": "^14.3.4"
+  }
+}
