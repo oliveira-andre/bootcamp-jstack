@@ -7,6 +7,15 @@ service: apisls
 
 plugins:
   - serverless-offline
+  
+package:
+  individually: true
+
+build:
+  esbuild:
+    minify: true
+    target: 'node20'
+    format: 'esm'
 
 provider:
   name: aws

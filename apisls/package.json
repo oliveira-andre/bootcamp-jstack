@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "sls offline --reloadHandler"
   },
   "devDependencies": {
-    "serverless-offline": "^14.3.4"
+    "@types/aws-lambda": "^8.10.146",
+    "esbuild": "^0.24.0",
+    "serverless-esbuild": "^1.54.6",
+    "serverless-offline": "^14.3.4",
+    "typescript": "^5.7.2"
   }
 }
