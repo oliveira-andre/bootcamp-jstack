@@ -32,3 +32,28 @@ react-query-class/*.njsproj
 react-query-class/*.sln
 react-query-class/*.sw?
 
+
+# Logs
+vite-class/logs
+vite-class/*.log
+vite-class/npm-debug.log*
+vite-class/yarn-debug.log*
+vite-class/yarn-error.log*
+vite-class/pnpm-debug.log*
+vite-class/lerna-debug.log*
+
+vite-class/node_modules
+vite-class/dist
+vite-class/dist-ssr
+vite-class/*.local
+
+# Editor directories and files
+vite-class/.vscode/*
+vite-class/!.vscode/extensions.json
+vite-class/.idea
+vite-class/.DS_Store
+vite-class/*.suo
+vite-class/*.ntvs*
+vite-class/*.njsproj
+vite-class/*.sln
+vite-class/*.sw?
