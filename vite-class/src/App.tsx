@@ -4,15 +4,22 @@ import { BrowserRouter, Link } from 'react-router-dom';
 
 import { Router } from '@app/Router';
 import { routes } from '@app/Router/routes';
+import { ThemeProvider } from '@app/contexts/ThemeContext';
+import { ThemeSwitcher } from '@views/components/ui/ThemeSwitcher';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Link to="/">Home</Link>
-      <br />
-      <Link to={routes.createUser}>Create User</Link>
-      <Router />
-    </BrowserRouter>
+    <ThemeProvider defaultTheme="dark" storageKey="theme">
+      <BrowserRouter>
+        <header className="h-10 border-b pb-6 mb-10 space-x-6">
+          <Link to="/">Home</Link>
+          <Link to={routes.createUser}>Create User</Link>
+        </header>
+
+        <ThemeSwitcher />
+        <Router />
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }
 
